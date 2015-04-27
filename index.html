@@ -1,0 +1,97 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Assanka</title>
+	<meta name="description" content="Web technologies consultancy, acquired by the Financial Times in 2012 and renamed FT Labs, now living at labs.ft.com">
+	<meta name="author" content="Assanka">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+
+		/** Fonts **/
+		@font-face {
+		    font-family: 'Humanst521LtBTLight';
+		    src: url('/fonts/humanistlt-webfont.eot');
+		    src: url('/fonts/humanistlt-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('/fonts/humanistlt-webfont.woff') format('woff'),
+		         url('/fonts/humanistlt-webfont.ttf') format('truetype'),
+		         url('/fonts/humanistlt-webfont.svg#Humanst521LtBTLight') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		body, html { height: 100%; margin: 0; padding: 0; font-size: 19px; font-family: 'Humanst521LtBTLight' Helvetica Arial sans-serif; }
+		body { background: #0b1b48 url(/images/background.jpg) center no-repeat; color: #fff; }
+		a { text-decoration: none; outline-style: none; color:#ffe1a0 }
+		a:hover { color: #ff9d00 }
+		img { -webkit-user-drag: none; border: 0 }
+
+		#layout { width: 100%; height: 100%; border:0; border-collapse: collapse; text-align: center; vertical-align: middle; }
+		#container { max-width: 760px; text-align:left; margin: auto; position: relative; overflow: hidden; }
+		#logo { position:absolute; top:50%; left:15px; margin-top: -40px; }
+		#divider {
+			position: absolute; width: 1px; height: 100%; top: 0; bottom: 0; left: 290px; overflow: hidden; background: -moz-linear-gradient(top,  rgba(11,27,72,0) 0%, rgba(255,255,255,0) 50%, rgba(11,27,72,0) 100%); /* FF3.6+ */
+			background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+		}
+		#text { margin-left: 315px; margin-right: 15px; padding: 50px 0 }
+
+
+		/** @smallscreen **/
+
+		@media screen and (max-width: 600px) {
+			#container {
+				padding: 40px;
+				text-align: center;
+			}
+			#logo {
+				position: static;
+				top: 0;
+				left: 0;
+				margin: 0;
+				margin-bottom: 10px;
+			}
+			#divider {
+				position: static;
+				height: 1px;
+				width: 100%;
+				top: 0;
+				left: 0;
+				margin-bottom: 18px;
+
+				background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* IE10+ */
+				background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+			}
+			#text {
+				margin-left: 0;
+				margin-right: 0;
+				padding: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<table id='layout'><tr><td>
+		<div id='container'>
+			<img id='logo' src='/images/logo.png' alt="Assanka: every possibility" width="250" height="79" />
+			<div id='divider'></div>
+			<div id='text'>
+				In January 2012, Assanka was acquired by the <a href="http://www.ft.com">Financial Times</a>.  We continue to work on emerging web technologies, and in an even more open and collaborative way than ever before.  You can now find us at <a id='labslink' href='http://labs.ft.com'>labs.ft.com</a>.
+			</div>
+		</div>
+	</td></tr></table>
+</body>
+</html>
